@@ -7,6 +7,11 @@ const path = require('path');
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 
 const config = {
+  devServer: {
+    static: {
+directory: __dirname
+    }
+  },
   entry: {
     app: './assets/js/script.js',
     events: './assets/js/events.js',
